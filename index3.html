@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MyFirstWebsite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+    
+    <section class="suber-header">
+        <nav>
+            <a href="index1.html"><img src="images/logo_transparent.png" ></a>
+            <div class="nav-links" id="navLinks">
+                <i class="bi bi-x-lg" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="./index2.html">1.Oldal</a></li>
+                    <li><a href="./index3.html">2.Oldal</a></li>
+                    <li><a href="./index4.html">3.Oldal</a></li>
+                    <li><a href="./index5.html">4.Oldal</a></li>
+                </ul>
+            </div>
+            <i class="bi bi-list" onclick="showMenu()"></i>
+        </nav>
+    <div class="label-box">
+        <h1>kérem az adatokat:</h1>
+        <form class="labels"action="https://formsubmit.co/donota.don@gmail.com"  method="post">
+            <div>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Donald" required>
+                <br><br>         
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Trump" required>           
+                <br><br>            
+                <label for="pass">password:</label>
+                <input type="password" id="pass" name="pass" maxlength="12" >            
+                <br><br>
+                <label for="email">email:</label>
+                <input type="email" id="email" name="email" placeholder="donaldtruck@gmail.com" >
+                <br><br>
+                <label for="phone">phone +36:</label>
+                <input type="tel" id="phone" name="phone" placeholder="20-345-56-78">
+                <br><br>
+                <label for="bdate">birthdate:</label>
+                <input type="date" id="bdate" name="bdate">
+            </div>
+            <br><br>
+            <div>
+                <input type="reset">            
+                <br><br>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    </section>
+    <script src="script.js"></script>   
+</body>
+</html>
